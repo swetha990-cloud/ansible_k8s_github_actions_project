@@ -136,7 +136,7 @@ eksctl create cluster --name my-cluster
 
 ## Docker && Sonarqube
 ```
-yum install docker 
+yum install docker -y
 systemctl start docker
 systemctl enable docker
 docker run -itd --name sonar -p 9000:9000 sonarqube:lts
