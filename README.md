@@ -134,7 +134,7 @@ aws configure
 eksctl create cluster --name my-cluster 
 ```
 
-## sonarqube
+## Docker && Sonarqube
 ```
 yum install docker 
 systemctl start docker
