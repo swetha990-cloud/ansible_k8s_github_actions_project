@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mc-app
-        image: swethasrk/k8s_ansible:1
+        image: swethasrk/k8s_ansible:2
         ports:
         - containerPort: 8080
 ---
