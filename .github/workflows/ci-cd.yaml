@@ -106,9 +106,8 @@ jobs:
           
       - name: Configure kubeconfig
         run: |
-          mkdir -p $HOME/.kube 
-          echo "${{ secrets.KUBECONFIG_DATA }}" | base64 -d > $HOME/.kube/config
-          chmod 777 $HOME/.kube/config
+          aws eks update-kubeconfig --region us-east-1 --name labtest 
+          
 
       - name: Check cluster access
         run: kubectl get nodes
