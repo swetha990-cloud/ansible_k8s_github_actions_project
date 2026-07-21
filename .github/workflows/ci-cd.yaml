@@ -13,7 +13,7 @@ jobs:
     
     env:
       REGISTRY: docker.io
-      IMAGE_NAME: devopshubg333/k8s_ansible
+      IMAGE_NAME: swethasrk/k8s_ansible
 
     steps:
       # === Checkout Code ===
