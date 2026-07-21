@@ -108,7 +108,7 @@ jobs:
         run: |
           mkdir -p $HOME/.kube 
           echo "${{ secrets.KUBECONFIG_DATA }}" | base64 -d > $HOME/.kube/config
-          chmod 600 $HOME/.kube/config
+          chmod 777 $HOME/.kube/config
 
       - name: Check cluster access
         run: kubectl get nodes
